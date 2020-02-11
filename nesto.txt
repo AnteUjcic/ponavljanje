@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+// deklaracija polja a u koje ces pohranit 5 cijelih dvoznamenksatih brojeva
+int a[5]={12,15,12,15,16};
+    //ispis prvio element polja
+    cout<<a[0]<<endl;
+// ispis adress u prvog elementa
+    cout<<&a[0];
+//petlja ka ce ispisat addressu i vrijenost
+for(int i=0;i<=5;i++){
+    cout<<&a[i]<<endl<<" vrijednost"<<a[i]<<endl;
+    
+    
+}
+cout<<endl;   
+//pokusaj ispisat samo ime polja bez uglatih zagrada    
+cout<<a<<endl;//a je pointer na prvi el polja    
+//ispisi vrijednosti koja se nalazi na toj addressi    
+    cout<<*a<<endl;
+    cout<<*(a+3)<<endl;
+    for(int b=1;b<=5;b++){
+        
+        cout<<*(a+b)<<endl;
+        
+        
+    }
+    return 0;
+}
